@@ -1,0 +1,27 @@
+<ion-content>
+<ion-grid>
+  <ion-row justify-content-center>
+    <ion-col col-sm-6 col-lg-4 col-sm-4>
+      <ion-card>
+        <ion-card-header text-center>
+          <img style="width: 50%; display: inline" src="assets/img/ipecege.png">
+        </ion-card-header>
+        <ion-card-content>
+          <ion-card-title text-center>OVER THE TOP</ion-card-title>
+          <form (submit)="login()">
+          <ion-item>PecegeNow
+            <ion-input type="text" name="email" placeholder="E-mail" [(ngModel)]="user.email" ></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="password" name="password" placeholder="Senha" [(ngModel)]="user.password" ></ion-input>
+          </ion-item>
+          <ion-item>
+            <button ion-button type="submit" large block>Entrar</button>
+          </ion-item>
+          </form>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>
